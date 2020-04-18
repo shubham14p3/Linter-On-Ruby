@@ -13,5 +13,5 @@ class WhiteSpace < Rule
 	  end
 	  @broken
 	end
-  end
+end
   

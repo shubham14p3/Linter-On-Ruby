@@ -3,7 +3,7 @@ class FileSize < Rule
 	  @line = 0
 	  data = file_data.map(&:chomp)
 	  lines = data.count
-	  if lines > 120
+	  if lines > 100
 		@broken = true
 		add_to_report(file_name, @line, @name, lines)
 	  else
@@ -12,4 +12,4 @@ class FileSize < Rule
 	  @broken
 	end
   end
-  
+    

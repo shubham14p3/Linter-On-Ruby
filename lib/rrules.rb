@@ -1,5 +1,5 @@
 class Rule
-	@@report = []
+	@@report = [] # rubocop:disable Style/ClassVars
 	attr_reader :name, :msg, :broken
 	def initialize(name)
 	  @name = name

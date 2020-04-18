@@ -6,7 +6,7 @@ class LineLength < Rule
 	  data.each do |code_line|
 		@line += 1
 		char_num = code_line.length
-		if char_num > 120
+		if char_num > 80
 		  @broken = true
 		  add_to_report(file_name, @line, @name, char_num)
 		end
