@@ -1,10 +1,10 @@
 # ./spec/linter_spec.rb
 require_relative '../lib/rules.rb'
 require_relative '../lib/filesize'
-require_relative '../lib/linelength'
+require_relative '../lib/maxlinelength'
 require_relative '../lib/indentation'
-require_relative '../lib/whitespace'
-require_relative '../lib/emptyline'
+require_relative '../lib/trailingwhitespace'
+require_relative '../lib/emptyeofline'
 
 file_name1 = './test/enumerable.rb'
 exit false unless File.exist?(file_name1)
@@ -33,7 +33,7 @@ RSpec.describe FileSize do
   end
 end
 
-RSpec.describe LineLength do
+RSpec.describe MaxLineLength do
   rule_obj = MaxLineLength.new('Max. Number of characters per line')
   describe '#parse' do
     it 'Checks if the length of any code line in file 1 is more than 80 char' do
@@ -83,7 +83,7 @@ RSpec.describe Indentation do
   end
 end
 
-RSpec.describe WhiteSpace do
+RSpec.describe TrailingWhiteSpace do
   rule_obj = TrailingWhiteSpace.new('Trailing white space')
   describe '#parse' do
     it 'Checks every code line in file 1 for trailing white spaces' do
@@ -101,7 +101,7 @@ RSpec.describe WhiteSpace do
   end
 end
 
-RSpec.describe EmptyLine do
+RSpec.describe EmptyEOFLine do
   rule_obj = EmptyEOFLine.new('No empty line at EOF')
   describe '#parse' do
     it 'Checks file 2 for lack of EOF empty line' do

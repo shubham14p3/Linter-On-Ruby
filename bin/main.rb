@@ -1,18 +1,18 @@
 #!/usr/bin/env ruby
-require_relative '../lib/rrules'
+require_relative '../lib/rules'
 require_relative '../lib/filesize'
-require_relative '../lib/linelength'
+require_relative '../lib/maxlinelength'
 require_relative '../lib/indentation'
-require_relative '../lib/whitespace'
-require_relative '../lib/emptyline'
+require_relative '../lib/trailingwhitespace'
+require_relative '../lib/emptyeofline'
 
 def create_rules
   arr = []
   arr << FileSize.new('Max. Number of lines per file')
-  arr << LineLength.new('Max. Number of characters per line')
+  arr << MaxLineLength.new('Max. Number of characters per line')
   arr << Indentation.new('Unexpected indentation')
-  arr << WhiteSpace.new('Trailing white space')
-  arr << EmptyLine.new('No empty line at EOF')
+  arr << TrailingWhiteSpace.new('Trailing white space')
+  arr << EmptyEOFLine.new('No empty line at EOF')
   arr
 end
 
