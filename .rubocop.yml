@@ -25,6 +25,8 @@ Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
+Style/Tab:
+  Enabled: false
 Style/EachForSimpleLoop:
   Enabled: false
 Style/AndOr:
@@ -42,7 +44,7 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
-  
+
 Layout/TrailingWhitespace:
   Exclude:
    - "test/**/*"
