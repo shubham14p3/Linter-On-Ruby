@@ -4,7 +4,7 @@ require_relative '../lib/filesize'
 require_relative '../lib/linelength'
 require_relative '../lib/indentation'
 require_relative '../lib/whitespace'
-require_relative '../lib/emptyeline'
+require_relative '../lib/emptyline'
 
 def create_rules
   arr = []

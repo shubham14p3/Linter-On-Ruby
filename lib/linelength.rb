@@ -1,4 +1,4 @@
-class MaxLineLength < Rule
+class LineLength < Rule
 	def parse(file_data, file_name)
 	  data = file_data.map(&:chomp)
 	  @line = 0
