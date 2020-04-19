@@ -6,7 +6,6 @@ AllCops:
     - "test/**/*"
    
   DisplayCopNames: true
-  --cache false
 
 Layout/LineLength:
   Max: 120
@@ -19,6 +18,7 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
   Max: 30
+
 
 Style/Documentation:
   Enabled: false
