@@ -1,23 +1,36 @@
 # Linter-On-Ruby
 
-- A linter developed in Ruby
-- It's a linter for beginners, i.e., it provides feedback about errors or warning in code little by little
+Linter is a static analysis tool such as RuboCop. It checks the written code and makes suggestions based on pre-defined rules by community-driven coding style guides and common idioms.
+Most definitions of linter default behavior can be changed for the needs of your team and project via various configuration options.
 
-![screenshot](./app_screenshot.png)
+## Requirement for the projects:  
+- A linter developed in Ruby
+- It's a linter for beginners
 
 Linter-On-Ruby is a beginner level linter that checks ruby .rb code files for the following rules:
-- Maximum 100 lines per file
+- Maximum **100 lines** per file
 - Check the susceptible for **def**
-- Maximum 80 characters per code line
+- Maximum **80 characters** per code line
 - Check the susceptible for **class**
-- Use of two spaces of indentation.
+- Use of **two spaces** of indentation.
 - Check the susceptible for **end**
-- Exception in the line after a guard clause
+- Exception **in the line** after a guard clause
 - Check the susceptible for  **if**
-- No trailing spaces
+- **No trailing spaces**
 - Check the susceptible for **module**
-- Lack of EOF empty line
+- Lack of **EOF empty line**
 
+## Example for Error-1
+
+![screenshot](.images/Error1.PNG)
+
+## Example for Error-2
+
+![screenshot](.images/Error2.PNG)
+
+## Folder Structure
+
+![screenshot](.images/FileStructure.PNG)
 
 ## Built With
 
