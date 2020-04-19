@@ -4,11 +4,9 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "test/**/*"
-    - "bin/mian.rb"
-    - "test/enumerable.rb"
-
-
+   
   DisplayCopNames: true
+  UseCache : false
 
 Layout/LineLength:
   Max: 120
