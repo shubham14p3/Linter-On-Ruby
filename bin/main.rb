@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+# !/usr/bin/env ruby
 require_relative '../lib/rules'
 require_relative '../lib/filesize'
 require_relative '../lib/maxlinelength'
