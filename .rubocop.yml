@@ -52,7 +52,8 @@ Layout/EndAlignment:
 Layout/TrailingEmptyLines:
   Exclude:
    - "test/**/*"
-
+Link/ScriptPermission:
+  Enabled: false
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride :
