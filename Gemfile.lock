@@ -19,10 +19,11 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   colorize
   rspec
 
 BUNDLED WITH
-   1.17.2
+   2.1.2

@@ -1,73 +1,248 @@
-# Project Name
+# Linter-On-Ruby
 
-> One paragraph statement about the project.
+- A linter developed in Ruby
+- It's a linter for beginners, i.e., it provides feedback about errors or warning in code little by little
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+Linter-On-Ruby is a beginner level linter that checks ruby .rb code files for the following rules:
+- Maximum 100 lines per file
+- Check the susceptible for **def**
+- Maximum 80 characters per code line
+- Check the susceptible for **class**
+- Use of two spaces of indentation.
+- Check the susceptible for **end**
+- Exception in the line after a guard clause
+- Check the susceptible for  **if**
+- No trailing spaces
+- Check the susceptible for **module**
+- Lack of EOF empty line
+
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Ruby
+- RSpec
+- VSCode (Windows Application)
 
-## Live Demo
+# Getting started
 
-[Live Demo Link](https://livedemo.com)
+To get a local copy of this repository up and running, follow these steps: 
 
+- Click the **"Clone or download"** button or run the follwing command
+  
+  git clone https://github.com/shubham14p3/Linter-On-Ruby.git
 
-## Getting Started
+- Type **ruby bin/main.rb** and press **[Enter]** and for 
+- Type main.rb file/path/you/want/to/check.rb on command line and press **[Enter]**.
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+# Samples
 
+### Indentation Cop 
+Detects indentation with the rules of two spaces indentation.
 
-To get a local copy up and running follow these simple example steps.
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = 12
+end
+```
 
-### Prerequisites
+#### \# Bad
+```
+def my_method(arg1, arg2)
+  variables = 12
+  end
+```
 
-### Setup
+### Max. 80 lines per line
 
-### Install
+#### \# Bad
+```ruby
+    if extra_large_condition1 && extra_large_condition2 && extra_large_condition3 && extra_large_condition4
+```
+#### \# Good
+```ruby
+    if extra_large_condition1 && extra_large_condition2 &&
+      extra_large_condition3 && extra_large_condition4
+```
 
-### Usage
+### Soft Paranthese Missing Cop 
+Calculates the total number of soft parantheses and returns the line number if closing and opening parantheses numbers doesn't match.
 
-### Run tests
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = 12
+end
+```
 
-### Deployment
+#### \# Bad
+```
+def my_method(arg1, arg2
+  variables = 12
+end
+```
+### Use of two spaces of indentation
 
+#### \# Bad
+```ruby
+        name = 'Carlos'
+        if name.length > 4
+            puts "Hello #{name}!" # tab or more than 2 spaces 
+        end
+```
+#### \# Good
+```ruby
+        name = 'Carlos'
+        if name.length > 4
+          puts "Hello #{name}!"
+        end
+```
+
+### Square Bracket Missing Cop 
+Does the same for square brackets.
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = [12]
+end
+```
+
+#### \# Bad
+```
+def my_method(arg1, arg2)
+  variables = [12
+end
+```
+### Exception in the line after a guard clause
+
+#### \# Good
+```ruby
+        return unless File.exists?('file_name')
+                          # empty line indentation can be 0 even if previous line is 4
+        some other code
+ ```
+
+### Curly Bracket Missing Cop
+Does the same for curly brackets.
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+```
+
+#### \# Bad
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" 
+end
+```
+### Missing  EOF empty line
+
+#### \# Bad
+```ruby
+        name = 'Carlos'
+        if name.length > 4
+          puts "Hello #{name}!"
+        end # file ends here
+```
+#### \# Good
+```ruby
+        name = 'Carlos'
+        if name.length > 4
+          puts "Hello #{name}!"
+        end
+        # file ends here
+```
+### Extra Space Cop 
+It scans the lines and returns a note if it finds a bigger space than 1 character.
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+```
+
+#### \# Bad
+```
+def my_method(arg1,     arg2)
+  variables = { symbol: "sample" }
+end
+```
+### No trailing spaces
+
+#### \# Bad
+```ruby
+        puts 'Hello, world!' # invisible trailing space here
+```
+#### \# Good
+```ruby
+        puts 'Hello, world!'  # the line ends with the last single quote
+```
+
+### New Line Cop
+If there is a keyword immediately before the 'end' keyword it returns an error message.
+
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+
+def my_method2(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+```
+
+#### \# Bad
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+def my_method2(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+```
+### Keyword 'end' Missing Cop
+If the keywords numbers doesn't match with the **end** numbers it returns an error message with the line number of the latest end.
+#### \# Good
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" }
+end
+```
+
+#### \# Bad
+```
+def my_method(arg1, arg2)
+  variables = { symbol: "sample" }
+
+```
+# Prerequisites
+  
+ You must have Ruby [installed on your computer](https://www.ruby-lang.org/en/documentation/installation/)
+ 
 
 
 ## Authors
 
-👤 **Author1**
+👤 Shubham Raj
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@ShubhamRaj](https://github.com/shubham14p3)
+- Linkedin: [Shubham14p3](https://www.linkedin.com/in/shubham14p3/)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
+Feel free to check the [issues page](https://github.com/shubham14p3/Linter-On-Ruby/issues/).
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- @Microverse
+- My Family & Friends
 
 ## 📝 License
 
