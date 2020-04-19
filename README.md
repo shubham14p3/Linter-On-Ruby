@@ -22,15 +22,15 @@ Linter-On-Ruby is a beginner level linter that checks ruby .rb code files for th
 
 ## Example for Error-1
 
-![screenshot](.images/Error1.PNG)
+![screenshot](./images/Error1.PNG)
 
 ## Example for Error-2
 
-![screenshot](.images/Error2.PNG)
+![screenshot](./images/Error2.PNG)
 
 ## Folder Structure
 
-![screenshot](.images/FileStructure.PNG)
+![screenshot](./images/FileStructure.PNG)
 
 ## Built With
 
