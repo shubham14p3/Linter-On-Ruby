@@ -4,7 +4,7 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "test/**/*"
-    - 'lib/student_codes/**/*'
+    - "lib/student_codes/**/*"
      
   DisplayCopNames: true
 
