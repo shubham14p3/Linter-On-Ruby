@@ -4,6 +4,8 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "test/**/*"
+    - "bin/mian.rb"
+    - "test/enumerable.rb"
 
 
   DisplayCopNames: true
@@ -52,8 +54,6 @@ Layout/EndAlignment:
 Layout/TrailingEmptyLines:
   Exclude:
    - "test/**/*"
-Link/ScriptPermission:
-  Enabled: false
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride :
