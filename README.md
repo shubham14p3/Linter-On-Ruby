@@ -8,6 +8,7 @@ Most definitions of linter default behavior can be changed for the needs of your
 - It's a linter for beginners
 
 Linter-On-Ruby is a beginner level linter that checks ruby .rb code files for the following rules:
+
 - Maximum **100 lines** per file
 - Check the susceptible for **def**
 - Maximum **80 characters** per code line
