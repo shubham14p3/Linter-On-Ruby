@@ -247,6 +247,22 @@ def my_method(arg1, arg2)
   
  You must have Ruby [installed on your computer](https://www.ruby-lang.org/en/documentation/installation/)
  
+# Linters Error Descriptions 
+
+Code in White Colors shows error for :-
+- Maximum **100 lines** per file
+- Maximum **80 characters** per code line
+- Use of **two spaces** of indentation.
+- Exception **in the line** after a guard clause
+- **No trailing spaces**
+- Lack of **EOF empty line**
+
+Code in other Colors (Red, Yellow,etc) shows error for :-
+- Check the susceptible for **def**
+- Check the susceptible for **module**
+- Check the susceptible for  **if**
+- Check the susceptible for **end**
+- Check the susceptible for **class**
 
 
 ## Authors
