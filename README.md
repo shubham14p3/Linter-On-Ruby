@@ -8,7 +8,6 @@ Most definitions of linter default behavior can be changed for the needs of your
 - It's a linter for beginners
 
 Linter-On-Ruby is a beginner level linter that checks ruby .rb code files for the following rules:
-
 - Maximum **100 lines** per file
 - Check the susceptible for **def**
 - Maximum **80 characters** per code line
@@ -47,8 +46,18 @@ To get a local copy of this repository up and running, follow these steps:
   
   git clone https://github.com/shubham14p3/Linter-On-Ruby.git
 
+- Remeber to change the extentions of files present in lib/students codes to following :- 
+  - **"some_ruby_file.rb.txt"** to **"some_ruby_file.rb"**
+  - **"student_code1.rb.txt"** to **"student_code1.rb"**
+  - **"student_code2.rb.txt"** to **"student_code2.rb"**
+  - **"student_code3.rb.txt"** to **"student_code3.rb"**
+  - **"student_code4.rb.txt"** to **"student_code4.rb"**
+  - **"student_code5.rb.txt"** to **"student_code5.rb"**
+  - **"student_code6.rb.txt"** to **"student_code6.rb"**
+  
 - Type **ruby bin/main.rb** and press **[Enter]** and for 
 - Type main.rb file/path/you/want/to/check.rb on command line and press **[Enter]**.
+- To run Test cases just run **RSPEC** and press **[Enter]**
 
 # Samples
 
@@ -69,7 +78,7 @@ def my_method(arg1, arg2)
   end
 ```
 
-### Max. 80 lines per line
+### Max. 80 characters per line
 
 #### \# Bad
 ```ruby
@@ -238,6 +247,22 @@ def my_method(arg1, arg2)
   
  You must have Ruby [installed on your computer](https://www.ruby-lang.org/en/documentation/installation/)
  
+# Linters Error Descriptions 
+
+Code in White Colors shows error for :-
+- Maximum **100 lines** per file
+- Maximum **80 characters** per code line
+- Use of **two spaces** of indentation.
+- Exception **in the line** after a guard clause
+- **No trailing spaces**
+- Lack of **EOF empty line**
+
+Code in other Colors (Red, Yellow,etc) shows error for :-
+- Check the susceptible for **def**
+- Check the susceptible for **module**
+- Check the susceptible for  **if**
+- Check the susceptible for **end**
+- Check the susceptible for **class**
 
 
 ## Authors
