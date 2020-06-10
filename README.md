@@ -272,6 +272,10 @@ Code in other Colors (Red, Yellow,etc) shows error for :-
 - Github: [@ShubhamRaj](https://github.com/shubham14p3)
 - Linkedin: [Shubham14p3](https://www.linkedin.com/in/shubham14p3/)
 
+## Future updates  
+- More specific conditions will be added.
+_ More linters feature needs to be added.
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
